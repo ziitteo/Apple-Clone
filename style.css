@@ -1,0 +1,77 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Reset Css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", "Apple Gothic",
+    "Noto Sans KR", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border: none;
+}
+
+button {
+  font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", "Apple Gothic",
+    "Noto Sans KR", sans-serif;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Utilities */
+.visuallyhidden {
+  display: none;
+}
+/* Header */
+
+/* 반응형 웹사이트 */
+/* >= 735px (mobile) */
+@media screen and (min-width: 735px) {
+}
+
+/* >= 834px (tablet) */
+@media screen and (min-width: 834px) {
+}
+
+/* >= 1069px (desktop) */
+@media screen and (min-width: 1441px) {
+}
+
+/* >= 1069px (desktop) */
+@media screen and (min-width: 1069px) {
+}
