@@ -27,8 +27,7 @@
 }
 
 body {
-  font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", "Apple Gothic",
-    "Noto Sans KR", sans-serif;
+  font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", "Apple Gothic", MalgunGothic, "HY Dotum", "Lexi Gulim", "Helvetica Neue", Arial, sans-serif;
 }
 
 a {
@@ -37,12 +36,13 @@ a {
   border: none;
 }
 
+
 button {
-  font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", "Apple Gothic",
-    "Noto Sans KR", sans-serif;
+  font-family: SF Pro KR, SF Pro Display, SF Pro Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif;
   background-color: #fff;
   border: none;
   cursor: pointer;
+  ove
 }
 
 ul,
@@ -57,11 +57,148 @@ li {
 .visuallyhidden {
   display: none;
 }
+
+/* body */
+
+.wrap {
+  display: block;
+  width: 100%;
+}
+
 /* Header */
+#header {
+  width: 100%;
+  position: relative;
+  background-color: #fbfbfd;
+}
+
+#globalnav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+#globalnav-list {
+  position: relative;
+  width: 100%;
+  height: 48px;
+}
+
+#globalnav-apple-link {
+  height: 48px;
+}
+
+.apple-logo .globanva-menu-link {
+  padding: 0 16px;
+}
+
+.globanva-menu-link {
+  padding: 0 8px;
+}
+
+.globalnav-image-regular {
+  display: none;
+}
+
+.globalnav-menuback {
+  display: none;
+}
+
+.globalnav-item-flyout-open {
+  display: none;
+  background-color: #fbfbfd;
+}
+
+.globalnav-menu-flyout {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: calc(100vw - 15px);
+  height: 100%;
+  max-height: 1024px;
+  background-color: #fbfbfd;
+  overflow: hidden;
+}
+
+.globalnav-menu-list {
+  padding: 0px 0px 84px;
+}
+
+.golobal-submenu-trigger-link {
+  position: relative;
+  width: 100%;
+  padding: 3px 48px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.globalnav-link-text {
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  color: #333336;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.1428571429;
+}
+
+.globalnav-link-chevron {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  color: #333336;
+  background-color: #fbfbfd;
+  display: flex;
+  justify-content: center;
+}
+
+.globalnav-link-chevron button {
+  background-color: #fbfbfd;
+}
+
+.globalnav-flyout {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+#gobalnav-search-link,
+#globalnav-bag-link {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submenu-trigger {
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.submenu-trigger button {
+  transition: opacity 0.24s ease-in-out;
+}
+
+.trigger-button {
+  width: 48px;
+  height: 48px;
+  background-color: #fbfbfd;
+}
 
 /* 반응형 웹사이트 */
 /* >= 735px (mobile) */
 @media screen and (min-width: 735px) {
+  #globalnav {
+    height: 44px;
+    max-width: 996px;
+    margin: 0 auto;
+  }
 }
 
 /* >= 834px (tablet) */

@@ -4,18 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apple (대한민국)</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/dd947e239c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js"></script>
   </head>
-  <body>
-    <div class="wrap">
+  <body class="nav-overlap">
+    <div id="wrap" class="wrap">
       <header id="header">
         <nav id="globalnav">
           <h1 class="visuallyhidden">Menu Bar</h1>
-          <div class="global-item globalnav-menuback">
+          <div class="globalnav-item globalnav-menuback">
             <button aria-label="메인 메뉴" class="globalnav-menuback-button">
               <span class="globalnav-chevron-icon">
                 <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
@@ -27,942 +25,910 @@
             </button>
           </div>
           <ul id="globalnav-list" class="globalnav-list">
-            <li class="global-item apple-logo">
-              <a href="#" class="menu-link">
-                <svg height="48" viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="m15.5752 19.0792a4.2055 4.2055 0 0 0 -2.01 3.5376 4.0931 4.0931 0 0 0 2.4908 3.7542 9.7779 9.7779 0 0 1 -1.2755 2.6351c-.7941 1.1431-1.6244 2.2862-2.8878 2.2862s-1.5883-.734-3.0443-.734c-1.42 0-1.9252.7581-3.08.7581s-1.9611-1.0589-2.8876-2.3584a11.3987 11.3987 0 0 1 -1.9373-6.1487c0-3.61 2.3464-5.523 4.6566-5.523 1.2274 0 2.25.8062 3.02.8062.734 0 1.8771-.8543 3.2729-.8543a4.3778 4.3778 0 0 1 3.6822 1.841zm-6.8586-2.0456a1.3865 1.3865 0 0 1 -.2527-.024 1.6557 1.6557 0 0 1 -.0361-.337 4.0341 4.0341 0 0 1 1.0228-2.5148 4.1571 4.1571 0 0 1 2.7314-1.4078 1.7815 1.7815 0 0 1 .0361.373 4.1487 4.1487 0 0 1 -.9867 2.587 3.6039 3.6039 0 0 1 -2.5148 1.3236z"
-                  ></path>
-                </svg>
+            <li id="apple-logo-image" class="globalnav-item apple-logo">
+              <a href="#" id="globalnav-apple-link" class="globanva-menu-link">
+                <span class="globalnav-image-regular globalnav-link-image">
+                  <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
+                  </svg>
+                </span>
+                <span class="globalnav-image-compact globalnav-link-image">
+                  <svg height="48" viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m15.5752 19.0792a4.2055 4.2055 0 0 0 -2.01 3.5376 4.0931 4.0931 0 0 0 2.4908 3.7542 9.7779 9.7779 0 0 1 -1.2755 2.6351c-.7941 1.1431-1.6244 2.2862-2.8878 2.2862s-1.5883-.734-3.0443-.734c-1.42 0-1.9252.7581-3.08.7581s-1.9611-1.0589-2.8876-2.3584a11.3987 11.3987 0 0 1 -1.9373-6.1487c0-3.61 2.3464-5.523 4.6566-5.523 1.2274 0 2.25.8062 3.02.8062.734 0 1.8771-.8543 3.2729-.8543a4.3778 4.3778 0 0 1 3.6822 1.841zm-6.8586-2.0456a1.3865 1.3865 0 0 1 -.2527-.024 1.6557 1.6557 0 0 1 -.0361-.337 4.0341 4.0341 0 0 1 1.0228-2.5148 4.1571 4.1571 0 0 1 2.7314-1.4078 1.7815 1.7815 0 0 1 .0361.373 4.1487 4.1487 0 0 1 -.9867 2.587 3.6039 3.6039 0 0 1 -2.5148 1.3236z"
+                    ></path>
+                  </svg>
+                </span>
               </a>
             </li>
-            <li class="global-item global-menu">
-              <ul class="tablet">
-                <li class="global-item">
-                  <div class="menu-button-wrapper">
-                    <a href="#" class="menu-link">스토어</a>
-                    <button id="store-menu" type="button" aria-label="store menu">
-                      <span class="submenu-button-icon">
-                        <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
-                          ></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="localnav">
-                    <div class="local-menu">
-                      <h2 class="localnav-headline localnave-hedline-hidden">쇼핑하기</h2>
-                      <ul class="localnav-list">
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">최신 제품 쇼핑하기</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">Mac</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iPad</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iPhone</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">Apple Watch</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">액세서리</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline">빠른 링크</h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link">매장 찾기</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">주문 상태</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple Trade In</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">할부 방식</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline">특별 할인 쇼핑하기</h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link">인증 리퍼비쉬 제품</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">교육</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">비즈니스</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="global-item">
-                  <div class="menu-button-wrapper">
-                    <a href="#" class="menu-link">Mac</a>
-                    <button id="store-menu" type="button" aria-label="store menu">
-                      <span class="submenu-button-icon">
-                        <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
-                          ></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="localnav">
-                    <div class="local-menu">
-                      <h2 class="localnav-headline localnave-hedline-hidden">Mac 살펴보기</h2>
-                      <ul class="localnav-list">
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">Mac 모두 살펴보기</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">MacBook Air</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">MacBook Pro</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iMac</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">Mac mini</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">디스플레이</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Mac 비교하기</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Mac은 뭐든 척척</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline">Mac 쇼핑하기</h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link">Mac 쇼핑하기</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Mac 액세서리</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple Trade In</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">할부 방식</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline">그 외 Mac 관련 항목</h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link">Mac 지원</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Mac을 위한 AppleCare+</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">macOS Sonoma</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple이 만든 앱</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">연속성</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">iCloud+</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Mac과 비즈니스</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">교육</a>
-                        </li>
-                      </ul>
+            <li class="globalnav-item globalnav-menu globalnav-item-flyout-open">
+              <div class="globalnav-menu-flyout">
+                <div class="globalnav-menu-list">
+                  <div class="globalnav-item global-item-store">
+                    <ul class="global-submenu-trigger-group">
+                      <li class="golobal-submenu-trigger-item">
+                        <a href="#" class="globanva-menu-link golobal-submenu-trigger-link global-link-store">
+                          <span class="globalnav-link-text">스토어</span>
+                          <span class="globalnav-link-chevron">
+                            <button id="store-menu" type="button" aria-label="store menu">
+                              <span class="submenu-button-icon">
+                                <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </button>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div id="global-submenu-link-store" class="globalnav-flyout globalnav-submenu">
+                      <div class="localnav">
+                        <div class="local-menu">
+                          <h2 class="localnav-headline localnave-hedline-hidden">쇼핑하기</h2>
+                          <ul class="localnav-list">
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">최신 제품 쇼핑하기</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Mac</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPad</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPhone</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple Watch</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">액세서리</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">빠른 링크</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">매장 찾기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">주문 상태</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Trade In</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">할부 방식</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">특별 할인 쇼핑하기</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">인증 리퍼비쉬 제품</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">교육</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">비즈니스</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </li>
-                <li class="global-item">
-                  <div class="menu-button-wrapper">
-                    <a href="#" class="menu-link">iPad</a>
-                    <button id="store-menu" type="button" aria-label="store menu">
-                      <span class="submenu-button-icon">
-                        <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
-                          ></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="localnav">
-                    <div class="local-menu">
-                      <h2 class="localnav-headline localnave-hedline-hidden">iPad 살펴보기</h2>
-                      <ul class="localnav-list">
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iPad 모두 살펴보기</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iPad Pro</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iPad Air</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iPad</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iPad mini</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">Apple Pencil</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">키보드</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">iPad 비교하기</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">iPad를 선택하는 이유</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline">iPad 쇼핑하기</h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link">iPad 쇼핑하기</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">iPad 액세서리</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple Trade In</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">할부 방식</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline">그 외 iPad 관련 항목</h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link">iPad 지원</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">iPad를 위한 AppleCare+</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">iPadOS 17</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple이 만든 앱</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">iCloud+</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">교육</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="global-item">
-                  <div class="menu-button-wrapper">
-                    <a href="#" class="menu-link">iPhone</a>
-                    <button id="store-menu" type="button" aria-label="store menu">
-                      <span class="submenu-button-icon">
-                        <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
-                          ></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="localnav">
-                    <div class="local-menu">
-                      <h2 class="localnav-headline localnave-hedline-hidden">iPhone 살펴보기</h2>
-                      <ul class="localnav-list">
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iPhone 모두 살펴보기</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iPhone 15 Pro</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iPhone 15</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iPhone 14</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iPhone 13</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">iPhone SE</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">iPhone 비교하기</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">안드로이드에서 갈아타기</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline">iPhone 쇼핑하기</h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link">iPhone 쇼핑하기</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">iPhone 액세서리</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple Trade In</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">할부 방식</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline">그 외 iPhone 관련 항목</h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link">iPhone 지원</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">iPhone을 위한 AppleCare+</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">iOS 17</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple이 만든 앱</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">iPhone의 개인 정보 보호</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">iCloud+</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Siri</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Siri</a>
-                        </li>
-                      </ul>
+                  <div class="globalnav-item global-item-mac">
+                    <ul class="global-submenu-trigger-group">
+                      <li class="golobal-submenu-trigger-item">
+                        <a href="#" class="globanva-menu-link golobal-submenu-trigger-link global-link-mac">
+                          <span class="globalnav-link-text">Mac</span>
+                          <span class="globalnav-link-chevron">
+                            <button id="store-menu" type="button" aria-label="store menu">
+                              <span class="submenu-button-icon">
+                                <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </button>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div id="global-submenu-link-mac" class="globalnav-flyout globalnav-submenu">
+                      <div class="localnav">
+                        <div class="local-menu">
+                          <h2 class="localnav-headline localnave-hedline-hidden">Mac 살펴보기</h2>
+                          <ul class="localnav-list">
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Mac 모두 살펴보기</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">MacBook Air</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">MacBook Pro</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iMac</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Mac mini</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">디스플레이</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Mac 비교하기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Mac은 뭐든 척척</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">Mac 쇼핑하기</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">Mac 쇼핑하기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Mac 액세서리</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Trade In</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">할부 방식</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">그 외 Mac 관련 항목</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">Mac 지원</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Mac을 위한 AppleCare+</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">macOS Sonoma</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple이 만든 앱</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">연속성</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">iCloud+</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Mac과 비즈니스</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">교육</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </li>
-                <li class="global-item">
-                  <div class="menu-button-wrapper">
-                    <a href="#" class="menu-link">Watch</a>
-                    <button id="store-menu" type="button" aria-label="store menu">
-                      <span class="submenu-button-icon">
-                        <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
-                          ></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="localnav">
-                    <div class="local-menu">
-                      <h2 class="localnav-headline localnave-hedline-hidden">Watch 살펴보기</h2>
-                      <ul class="localnav-list">
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">Apple Watch 모두 살펴보기</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">Apple Watch Series 9</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">Apple Watch Ultra 2</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">Apple Watch SE</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">Apple Watch Nike</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">Apple Watch Hermès</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Watch 비교하기</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple Watch를 선택하는 이유</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline">Watch 쇼핑하기</h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple Watch 쇼핑하기</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple Watch Studio</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple Watch 밴드</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple Watch 액세서리</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple Trade In</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">할부 방식</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline">그 외 Watch 관련 항목</h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple Watch 지원</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">AppleCare+</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">watchOS 10</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple이 만든 앱</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="global-item global-search">
-                  <div class="menu-button-wrapper">
-                    <a href="#" class="menu-link">AirPods</a>
-                    <button id="store-menu" type="button" aria-label="store menu">
-                      <span class="submenu-button-icon">
-                        <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
-                          ></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="localnav">
-                    <div class="local-menu">
-                      <h2 class="localnav-headline localnave-hedline-hidden">AirPods 살펴보기</h2>
-                      <ul class="localnav-list">
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">AirPods 모두 살펴보기</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">AirPods Pro 2세대</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">AirPods 2세대</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">AirPods 3세대</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">AirPods Max</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">AirPods 비교하기</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline">AirPods 쇼핑하기</h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link">AirPods 쇼핑하기</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">AirPods 액세서리</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline">그 외 AirPods 관련 항목</h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link">AirPods 지원</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">헤드폰을 위한 AppleCare+</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple Music</a>
-                        </li>
-                      </ul>
+                  <div class="globalnav-item global-item-ipad">
+                    <ul class="global-submenu-trigger-group">
+                      <li class="golobal-submenu-trigger-item">
+                        <a href="#" class="globanva-menu-link golobal-submenu-trigger-link global-link-ipad">
+                          <span class="globalnav-link-text">iPad</span>
+                          <span class="globalnav-link-chevron">
+                            <button id="store-menu" type="button" aria-label="store menu">
+                              <span class="submenu-button-icon">
+                                <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </button>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div id="global-submenu-link-ipad" class="globalnav-flyout globalnav-submenu">
+                      <div class="localnav">
+                        <div class="local-menu">
+                          <h2 class="localnav-headline localnave-hedline-hidden">iPad 살펴보기</h2>
+                          <ul class="localnav-list">
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPad 모두 살펴보기</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPad Pro</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPad Air</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPad</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPad mini</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple Pencil</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">키보드</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">iPad 비교하기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">iPad를 선택하는 이유</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">iPad 쇼핑하기</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">iPad 쇼핑하기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">iPad 액세서리</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Trade In</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">할부 방식</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">그 외 iPad 관련 항목</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">iPad 지원</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">iPad를 위한 AppleCare+</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">iPadOS 17</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple이 만든 앱</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">iCloud+</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">교육</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </li>
-                <li class="global-item global-shopping-bag">
-                  <div class="menu-button-wrapper">
-                    <a href="#" class="menu-link">TV 및 홈</a>
-                    <button id="store-menu" type="button" aria-label="store menu">
-                      <span class="submenu-button-icon">
-                        <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
-                          ></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="localnav">
-                    <div class="local-menu">
-                      <h2 class="localnav-headline localnave-hedline-hidden">TV 및 홈 살펴보기</h2>
-                      <ul class="localnav-list">
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">TV 및 홈 살펴보기</a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link">Apple TV 4K</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline">TV 및 홈 쇼핑하기</h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link">Apple TV 4K 쇼핑하기</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">Siri Remote 쇼핑하기</a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link">TV 및 홈 액세서리</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline"></h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="global-item global-shopping-bag">
-                  <div class="menu-button-wrapper">
-                    <a href="#" class="menu-link">엔터테인먼트</a>
-                    <button id="store-menu" type="button" aria-label="store menu">
-                      <span class="submenu-button-icon">
-                        <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
-                          ></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="localnav">
-                    <div class="local-menu">
-                      <h2 class="localnav-headline localnave-hedline-hidden"></h2>
-                      <ul class="localnav-list">
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline"></h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline"></h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                      </ul>
+                  <div class="globalnav-item global-item-iphone">
+                    <ul class="global-submenu-trigger-group">
+                      <li class="golobal-submenu-trigger-item">
+                        <a href="#" class="globanva-menu-link golobal-submenu-trigger-link global-link-iphone">
+                          <span class="globalnav-link-text">iPhone</span>
+                          <span class="globalnav-link-chevron">
+                            <button id="store-menu" type="button" aria-label="store menu">
+                              <span class="submenu-button-icon">
+                                <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </button>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div id="global-submenu-link-iphone" class="globalnav-flyout globalnav-submenu">
+                      <div class="localnav">
+                        <div class="local-menu">
+                          <h2 class="localnav-headline localnave-hedline-hidden">iPhone 살펴보기</h2>
+                          <ul class="localnav-list">
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPhone 모두 살펴보기</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPhone 15 Pro</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPhone 15</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPhone 14</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPhone 13</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPhone SE</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">iPhone 비교하기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">안드로이드에서 갈아타기</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">iPhone 쇼핑하기</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">iPhone 쇼핑하기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">iPhone 액세서리</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Trade In</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">할부 방식</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">그 외 iPhone 관련 항목</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">iPhone 지원</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">iPhone을 위한 AppleCare+</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">iOS 17</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple이 만든 앱</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">iPhone의 개인 정보 보호</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">iCloud+</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Siri</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Siri</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </li>
-                <li class="global-item global-shopping-bag">
-                  <div class="menu-button-wrapper">
-                    <a href="#" class="menu-link">액세서리</a>
-                    <button id="store-menu" type="button" aria-label="store menu">
-                      <span class="submenu-button-icon">
-                        <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
-                          ></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="localnav">
-                    <div class="local-menu">
-                      <h2 class="localnav-headline localnave-hedline-hidden"></h2>
-                      <ul class="localnav-list">
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline"></h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline"></h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="global-item global-shopping-bag">
-                  <div class="menu-button-wrapper">
-                    <a href="#" class="menu-link">고객지원</a>
-                    <button id="store-menu" type="button" aria-label="store menu">
-                      <span class="submenu-button-icon">
-                        <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
-                          ></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="localnav">
-                    <div class="local-menu">
-                      <h2 class="localnav-headline localnave-hedline-hidden"></h2>
-                      <ul class="localnav-list">
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item-bold">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline"></h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="local-menu">
-                      <h2 class="localnav-headline"></h2>
-                      <ul class="lovalnav-list">
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                        <li class="local-item">
-                          <a href="#" class="local-link"></a>
-                        </li>
-                      </ul>
+                  <div class="globalnav-item global-item-watch">
+                    <ul class="global-submenu-trigger-group">
+                      <li class="golobal-submenu-trigger-item">
+                        <a href="#" class="globanva-menu-link golobal-submenu-trigger-link global-link-watch">
+                          <span class="globalnav-link-text">Watch</span>
+                          <span class="globalnav-link-chevron">
+                            <button id="store-menu" type="button" aria-label="store menu">
+                              <span class="submenu-button-icon">
+                                <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </button>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div id="global-submenu-link-watch" class="globalnav-flyout globalnav-submenu">
+                      <div class="localnav">
+                        <div class="local-menu">
+                          <h2 class="localnav-headline localnave-hedline-hidden">Watch 살펴보기</h2>
+                          <ul class="localnav-list">
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple Watch 모두 살펴보기</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple Watch Series 9</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple Watch Ultra 2</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple Watch SE</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple Watch Nike</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple Watch Hermès</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Watch 비교하기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Watch를 선택하는 이유</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">Watch 쇼핑하기</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Watch 쇼핑하기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Watch Studio</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Watch 밴드</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Watch 액세서리</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Trade In</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">할부 방식</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">그 외 Watch 관련 항목</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Watch 지원</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">AppleCare+</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">watchOS 10</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple이 만든 앱</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </li>
-              </ul>
+                  <div class="globalnav-item global-item-airpods">
+                    <ul class="global-submenu-trigger-group">
+                      <li class="golobal-submenu-trigger-item">
+                        <a href="#" class="globanva-menu-link golobal-submenu-trigger-link global-link-airpods">
+                          <span class="globalnav-link-text">AirPods</span>
+                          <span class="globalnav-link-chevron">
+                            <button id="store-menu" type="button" aria-label="store menu">
+                              <span class="submenu-button-icon">
+                                <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </button>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div id="global-submenu-link-airpods" class="globalnav-flyout globalnav-submenu">
+                      <div class="localnav">
+                        <div class="local-menu">
+                          <h2 class="localnav-headline localnave-hedline-hidden">AirPods 살펴보기</h2>
+                          <ul class="localnav-list">
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">AirPods 모두 살펴보기</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">AirPods Pro 2세대</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">AirPods 2세대</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">AirPods 3세대</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">AirPods Max</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">AirPods 비교하기</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">AirPods 쇼핑하기</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">AirPods 쇼핑하기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">AirPods 액세서리</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">그 외 AirPods 관련 항목</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">AirPods 지원</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">헤드폰을 위한 AppleCare+</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Music</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="globalnav-item global-item-tv-home">
+                    <ul class="global-submenu-trigger-group">
+                      <li class="golobal-submenu-trigger-item">
+                        <a href="#" class="globanva-menu-link golobal-submenu-trigger-link global-link-tv-home">
+                          <span class="globalnav-link-text">TV 및 홈</span>
+                          <span class="globalnav-link-chevron">
+                            <button id="store-menu" type="button" aria-label="store menu">
+                              <span class="submenu-button-icon">
+                                <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </button>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div id="global-submenu-link-tv-home" class="globalnav-flyout globalnav-submenu">
+                      <div class="localnav">
+                        <div class="local-menu">
+                          <h2 class="localnav-headline localnave-hedline-hidden">TV 및 홈 살펴보기</h2>
+                          <ul class="localnav-list">
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">TV 및 홈 살펴보기</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple TV 4K</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">TV 및 홈 쇼핑하기</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple TV 4K 쇼핑하기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Siri Remote 쇼핑하기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">TV 및 홈 액세서리</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">그 외 TV 및 홈 관련 항목</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple TV 지원</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">AppleCare+</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple TV 앱</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple TV+</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">홈 앱</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Music</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Siri</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">AirPlay</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="globalnav-item global-item-entertainment">
+                    <ul class="global-submenu-trigger-group">
+                      <li class="golobal-submenu-trigger-item">
+                        <a href="#" class="globanva-menu-link golobal-submenu-trigger-link global-link-entertainment">
+                          <span class="globalnav-link-text">엔터테인먼트</span>
+                          <span class="globalnav-link-chevron">
+                            <button id="store-menu" type="button" aria-label="store menu">
+                              <span class="submenu-button-icon">
+                                <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </button>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div id="global-submenu-link-entertainment" class="globalnav-flyout globalnav-submenu">
+                      <div class="localnav">
+                        <div class="local-menu">
+                          <h2 class="localnav-headline localnave-hedline-hidden">엔터테인먼트 살펴보기</h2>
+                          <ul class="localnav-list">
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">엔터테인먼트 살펴보기</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple One</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple TV+</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple Music</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple Arcade</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple Podcasts</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple Books</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">App Store</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">지원</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple TV+ 지원</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple Music 지원</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="globalnav-item global-item-accessories">
+                    <ul class="global-submenu-trigger-group">
+                      <li class="golobal-submenu-trigger-item">
+                        <a href="#" class="globanva-menu-link golobal-submenu-trigger-link global-link-accessories">
+                          <span class="globalnav-link-text">액세서리</span>
+                          <span class="globalnav-link-chevron">
+                            <button id="store-menu" type="button" aria-label="store menu">
+                              <span class="submenu-button-icon">
+                                <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </button>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div id="global-submenu-link-accessories" class="globalnav-flyout globalnav-submenu">
+                      <div class="localnav">
+                        <div class="local-menu">
+                          <h2 class="localnav-headline localnave-hedline-hidden">액세서리 쇼핑하기</h2>
+                          <ul class="localnav-list">
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">액세서리 모두 쇼핑하기</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Mac</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPad</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPhone</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Apple Watch</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">AirPods</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">TV 및 홈</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">액세서리 살펴보기</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple 제작 정품</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Beats by Dr. Dre</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">AirTag</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="globalnav-item global-item-support">
+                    <ul class="global-submenu-trigger-group">
+                      <li class="golobal-submenu-trigger-item">
+                        <a href="#" class="globanva-menu-link golobal-submenu-trigger-link global-link-support">
+                          <span class="globalnav-link-text mobile">지원</span>
+                          <span class="globalnav-link-text desktop">고객지원</span>
+                          <span class="globalnav-link-chevron">
+                            <button id="store-menu" type="button" aria-label="store menu">
+                              <span class="submenu-button-icon">
+                                <svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </button>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div id="global-submenu-link-support" class="globalnav-flyout globalnav-submenu">
+                      <div class="localnav">
+                        <div class="local-menu">
+                          <h2 class="localnav-headline localnave-hedline-hidden">지원 상황 살펴보기</h2>
+                          <ul class="localnav-list">
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPhone</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Mac</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">iPad</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Watch</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">AirPods</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">Music</a>
+                            </li>
+                            <li class="local-item-bold">
+                              <a href="#" class="local-link">TV</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">지원 상황 살펴보기</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">도움 받기</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">커뮤니티</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">보장 상태 확인하기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">수리</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">문의하기</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="local-menu">
+                          <h2 class="localnav-headline">유용한 주제</h2>
+                          <ul class="lovalnav-list">
+                            <li class="local-item">
+                              <a href="#" class="local-link">AppleCare+ 구입하기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">Apple ID 및 암호</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">청구 및 구독</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">나의 찾기</a>
+                            </li>
+                            <li class="local-item">
+                              <a href="#" class="local-link">손쉬운 사용</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="globalnav-item">
-              <a href="#">
+          </ul>
+          <li id="globalnav-serch" class="globalnav-item globalnav-item-serach">
+            <a href="#" id="gobalnav-search-link" class="globanva-menu-link">
+              <span class="globalnav-image-regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44">
+                  <path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path>
+                  </svg>
+              </span>
+              <span class="globalnav-image-compact">
                 <svg height="48" viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="m16.2294 29.9556-4.1755-4.0821a6.4711 6.4711 0 1 0 -1.2839 1.2625l4.2005 4.1066a.9.9 0 1 0 1.2588-1.287zm-14.5294-8.0017a5.2455 5.2455 0 1 1 5.2455 5.2527 5.2549 5.2549 0 0 1 -5.2455-5.2527z"
                   ></path>
                 </svg>
-              </a>
-            </li>
-            <li class="globalnav-item">
-              <a href="#">
+              </span>
+            </a>
+          </li>
+          <li id="globalnav-bag" class="globalnav-item globalnav-item-bag">
+            <a href="#" id="globalnav-bag-link" class="globanva-menu-link">
+              <span class="globalnav-image-regular">
                 <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z"
                   ></path>
                 </svg>
-              </a>
-            </li>
-          </ul>
-          <div class="submenu-open">
-            <button class="open-button">
-              <svg width="18" height="18" viewBox="0 0 18 18">
-                <polyline
-                  id="globalnav-menutrigger-bread-bottom"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  points="2 12, 16 12"
-                  class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom"
-                >
-                  <animate
-                    id="globalnav-anim-menutrigger-bread-bottom-open"
-                    attributeName="points"
-                    keyTimes="0;0.5;1"
-                    dur="0.24s"
-                    begin="indefinite"
-                    fill="freeze"
-                    calcMode="spline"
-                    keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
-                    values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5"
-                  ></animate>
-                  <animate
-                    id="globalnav-anim-menutrigger-bread-bottom-close"
-                    attributeName="points"
-                    keyTimes="0;0.5;1"
-                    dur="0.24s"
-                    begin="indefinite"
-                    fill="freeze"
-                    calcMode="spline"
-                    keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
-                    values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12"
-                  ></animate>
-                </polyline>
-                <polyline
-                  id="globalnav-menutrigger-bread-top"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  points="2 5, 16 5"
-                  class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top"
-                >
-                  <animate
-                    id="globalnav-anim-menutrigger-bread-top-open"
-                    attributeName="points"
-                    keyTimes="0;0.5;1"
-                    dur="0.24s"
-                    begin="indefinite"
-                    fill="freeze"
-                    calcMode="spline"
-                    keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
-                    values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15"
-                  ></animate>
-                  <animate
-                    id="globalnav-anim-menutrigger-bread-top-close"
-                    attributeName="points"
-                    keyTimes="0;0.5;1"
-                    dur="0.24s"
-                    begin="indefinite"
-                    fill="freeze"
-                    calcMode="spline"
-                    keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
-                    values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5"
-                  ></animate>
-                </polyline>
-              </svg>
-            </button>
-          </div>
+              </span>
+              <span class="globalnav-image-compact">
+                <svg height="48" viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m13.4575 16.9268h-1.1353a3.8394 3.8394 0 0 0 -7.6444 0h-1.1353a2.6032 2.6032 0 0 0 -2.6 2.6v8.9232a2.6032 2.6032 0 0 0 2.6 2.6h9.915a2.6032 2.6032 0 0 0 2.6-2.6v-8.9231a2.6032 2.6032 0 0 0 -2.6-2.6001zm-4.9575-2.2768a2.658 2.658 0 0 1 2.6221 2.2764h-5.2442a2.658 2.658 0 0 1 2.6221-2.2764zm6.3574 13.8a1.4014 1.4014 0 0 1 -1.4 1.4h-9.9149a1.4014 1.4014 0 0 1 -1.4-1.4v-8.9231a1.4014 1.4014 0 0 1 1.4-1.4h9.915a1.4014 1.4014 0 0 1 1.4 1.4z"></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div id="submenu-trigger" class="submenu-trigger">
+          <button id="trigger-button" class="trigger-button">
+            <svg width="18" height="18" viewBox="0 0 18 18" style="">
+              <polyline id="globalnav-menutrigger-bread-bottom" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 12, 16 12" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom">
+                <animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5"></animate>
+                <animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12"></animate>
+              </polyline>
+              <polyline id="globalnav-menutrigger-bread-top" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 5, 16 5" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top">
+                <animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15"></animate>
+                <animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5"></animate>
+              </polyline>
+            </svg>
+          </button>
+        </div>
         </nav>
       </header>
       <main role="main" class="main">
