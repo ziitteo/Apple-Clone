@@ -1,4 +1,4 @@
-window.onload = function () {
+onload = function () {
   const submenuTrigger = document.getElementById("submenu-trigger")
 
   if (!window.animRunning) {
@@ -29,11 +29,11 @@ window.onload = function () {
 
       //globalnav-item-flyout-open 설정
       navsubmenu.style.display = "block"
-      navsubmenu.style.transition = "height 2s ease"
+      navsubmenu.style.transition = "height 0.3s linear"
 
       // globalnav-list 설정
       navitem.style.height = "100vh"
-      navitem.style.transition = "height 0.5s ease"
+      navitem.style.transition = "height 0.3s linear"
 
       // apple-logo-image 설정
       applelogoimg.style.display = "none"
@@ -57,11 +57,11 @@ window.onload = function () {
 
       //globalnav-item-flyout-open 설정
       navsubmenu.style.display = "none"
-      navsubmenu.style.transition = "height 2s ease"
+      navsubmenu.style.transition = "height 0.3s linear"
 
       // globalnav-list 설정
       navitem.style.height = "0"
-      navitem.style.transition = "height 0.5s ease"
+      navitem.style.transition = "height 0.3s linear"
 
       // apple-logo-image 설정
       applelogoimg.style.display = "flex"
