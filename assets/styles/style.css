@@ -34,6 +34,7 @@ a {
   color: inherit;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 }
 
 button {
@@ -82,6 +83,10 @@ li {
   background-color: rgba(250, 250, 252, 0.8);
 }
 
+.globalnav-menuback {
+  display: none;
+}
+
 #globalnav-list {
   display: flex;
   position: relative;
@@ -89,29 +94,26 @@ li {
   height: 48px;
 }
 
+#apple-logo-image {
+  width: 100%;
+}
+
 #globalnav-apple-link {
   width: 49px;
   height: 48px;
-}
-
-.apple-logo {
-  width: 100%;
   padding: 0 16px;
 }
 
-.globanva-menu-link {
-  padding: 0 16px;
-}
-
-.globanva-menu-link {
+.globanva-menu-link:not(#globalnav-apple-link.globanva-menu-link) {
   padding: 0 8px;
 }
 
-.globalnav-image-regular {
-  display: none;
+.globanva-menu-link {
+  display: flex;
+  justify-content: center;
 }
 
-.globalnav-menuback {
+.globalnav-image-regular {
   display: none;
 }
 
@@ -132,11 +134,6 @@ li {
 
 .globalnav-menu-list {
   padding: 0px 0px 84px;
-}
-
-.globanva-menu-link {
-  display: flex;
-  justify-content: center;
 }
 
 .golobal-submenu-trigger-link {
@@ -210,6 +207,181 @@ main {
   margin: 48px 0;
 }
 
+.main-section {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: #fff;
+  margin-bottom: 12px;
+}
+
+.main-content {
+  width: 100%;
+  background-color: #f5f5f7;
+}
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark-theme {
+  background-color: #000;
+}
+
+.text-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  z-index: 4;
+  color: rgb(29, 29, 31);
+}
+
+.top-copy-wrapper .text-wrapper {
+  padding-top: 37px;
+}
+
+.bottom-copy-wrapper .text-wrapper {
+  justify-content: flex-end;
+  padding-bottom: 37px;
+}
+
+.dark-theme .text-wrapper {
+  color: #fff;
+}
+
+.text-wrapper .headline {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.21875;
+}
+
+.text-wrapper .subhead {
+  margin-top: 4px;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.028px;
+  line-height: 1.3157894737;
+  text-align: center;
+}
+
+.button-group {
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.button-fill {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.57143;
+  padding: 7px 15px;
+  background-color: #0071e3;
+  color: #fff;
+  border-radius: 980px;
+}
+
+.button-fill:hover {
+  background-color: #0077ed;
+  border-color: transparent;
+}
+
+.button-fill.reverse {
+  margin-left: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #06c;
+  border: 1px solid #06c;
+}
+
+.dark-theme .button-fill.reverse {
+  color: #2997ff;
+  border: 1px solid #2997ff;
+}
+
+.content-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.content-image {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 734px 500px;
+}
+
+.headline.logo-image {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.footnote-number {
+  position: relative;
+  top: 0;
+  font-size: 12px;
+}
+
+.headline.logo-image-watch {
+  height: 42px;
+  margin-top: 43px;
+  background-size: contain;
+  background-image: url("https://www.apple.com/v/home/bm/images/logos/apple-watch-series-9/promo_logo_apple_watch_series_9__ckz0hbex0yeu_small_2x.png");
+}
+
+.headline.logo-trade-in {
+  height: 27px;
+  margin-top: 41px;
+  background-image: url("https://www.apple.com/v/home/bm/images/logos/iphone-tradein/logo_tradein__d1fpktgipvki_small.png");
+}
+
+.image-may-event {
+  background-image: url("https://www.apple.com/v/home/bm/images/heroes/apple-event-may/hero_1_apple_event_may__b3bo6rpkqhle_small_2x.jpg");
+}
+
+.image-mother-day {
+  background-size: 734px 500px;
+  background-image: url("https://www.apple.com/v/home/bm/images/heroes/mothers-day-2024/hero_md24__e3yulubypvki_small_2x.jpg");
+}
+
+.image-iphone15-pro {
+  background-image: url("https://www.apple.com/v/home/bm/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_small_2x.jpg");
+}
+
+.image-iphone15 {
+  background-image: url("https://www.apple.com/v/home/bm/images/promos/iphone-15/promo_iphone15_announce__fmxxi8r9fkuy_small_2x.jpg");
+}
+
+.image-macbook-air {
+  background-image: url("https://www.apple.com/v/home/bm/images/promos/macbook-air-m3/promo_macbook_air_m3__e43jegok3wuq_small_2x.jpg");
+}
+
+.image-apple-watch {
+  background-image: url("https://www.apple.com/kr/home/bm/images/promos/apple-watch-series-9/promo_apple_watch_series_9_order__b3u85rm9zf6u_small.jpg");
+}
+
+.image-iPad {
+  background-image: url("https://www.apple.com/kr/home/bm/images/promos/ipad/promo_ipad__fioegapg12qi_small_2x.jpg");
+}
+
+.image-airPods-pro {
+  background-image: url("https://www.apple.com/v/home/bm/images/promos/airpods-pro/promo_airpods_pro_order__d8xv36p4uwae_small_2x.jpg");
+}
+
+.image-trade-in {
+  background-image: url("https://www.apple.com/v/home/bm/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_small_2x.jpg");
+}
+
 /* 반응형 웹사이트 */
 /* >= 735px (mobile) */
 @media screen and (min-width: 735px) {
@@ -229,6 +401,10 @@ main {
     width: 100%;
   }
 
+  .globalnav-menuback {
+    display: none;
+  }
+
   #globalnav-list {
     position: relative;
     width: 100%;
@@ -238,15 +414,11 @@ main {
 
   #globalnav-apple-link {
     height: 44px;
+    padding: 0 8px;
   }
 
-  .apple-logo {
-    padding: 0 0;
-    width: 30px;
-  }
-
-  .globanva-menu-link {
-    padding: 0 0;
+  #apple-logo-image {
+    width: auto;
   }
 
   .globanva-menu-link {
@@ -262,13 +434,12 @@ main {
     height: 44px;
   }
 
-  .globalnav-menu {
-    width: 100%;
+  .globalnav-item {
     flex-grow: 1;
   }
 
-  .globalnav-menuback {
-    display: none;
+  .globalnav-menu {
+    width: 100%;
   }
 
   .globalnav-item-flyout-open {
@@ -297,6 +468,8 @@ main {
   }
 
   .golobal-submenu-trigger-link {
+    display: flex;
+    justify-content: center;
     padding: 0 8px 0px;
   }
 
@@ -307,6 +480,7 @@ main {
     font-size: 12px;
     font-weight: 400;
     line-height: 1;
+    text-align: center;
   }
 
   .globalnav-link-chevron {
